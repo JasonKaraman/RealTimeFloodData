@@ -1,7 +1,8 @@
-Real-Time Flood Data Pipeline
+REAL-TIME HYPERLOCAL FLOOD DATA PIPELINE
+
 A fully automated pipeline for collecting, validating, and storing real-time hyperlocal flood data from NOAA, USGS, Twitter (X), and GIS flood zones into PostgreSQL. Useful for collecting and storing data regarding street-level flooding events. This can be useful for building out flood prediction models at the street level.
 
-Features
+FEATURES
 
 ✅ Automated Data Collection – Runs every 30 minutes
 
@@ -12,7 +13,7 @@ Features
 ✅ Modular Python Code – Well-structured and scalable
 
 
-Project Structure
+PROJECT STRUCTURE
 
 /RealTimeFloodData
 
@@ -25,33 +26,33 @@ Project Structure
 │── README.md               # Documentation
 
 
-⚙️ Installation & Setup
+INSTALLATION AND SETUP
 
-Clone the Repository
+1. CLONE REPOSITORY
 
 git clone https://github.com/JasonKaraman/RealTimeFloodData.git
 
 cd RealTimeFloodData
 
-GIS Flood Zones
+2. SAVE GIS FLOOD ZONES LOCALLY
 
 Ensure `/home/ubuntu/data/gis_flood_zones_YYYY-MM-DD.csv` is populated before running the script.  
 
 If missing, download GIS flood zones from official sources or generate the required CSV format.
 
 
-Install Dependencies
+3. INSTALL DEPENDENCIES
 
 pip install -r requirements.txt
 
 
-Run the Script Manually
+4. RUN SCRIPT MANUALLY
 
 python3 insert_data.py
 
 
-Automate Execution Every 30 Minutes using cron jobs
-
+5. AUTOMATE SCAN EVERY 30 MINUTES WITH CRON JOBS
+6. 
 crontab -e
 
 Then add this line at the end:
@@ -59,7 +60,7 @@ Then add this line at the end:
 */30 * * * * /usr/bin/python3 /home/ubuntu/insert_data.py >> /home/ubuntu/logs.txt 2>&1
 
 
-How It Works
+HOW IT WORKS
 
 Data Collection – The script ingests real-time flood data from NOAA, USGS, Twitter, and GIS sources.
 
@@ -70,12 +71,12 @@ Database Insertion – insert_data.py processes and inserts valid data into Post
 Automation – The run_every_30_minutes.sh script ensures continuous execution via cron jobs.
 
 
-🤝 Contributing
+CONTRIBUTING
 
 Feel free to fork this repository, submit issues, or make pull requests! Contributions are welcome.
 
 
-📜 License
+LICENSE
 
 This project is licensed under the MIT License.
 
