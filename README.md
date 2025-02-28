@@ -52,7 +52,7 @@ python3 insert_data.py
 
 
 5. AUTOMATE SCAN EVERY 30 MINUTES WITH CRON JOBS
-6. 
+
 crontab -e
 
 Then add this line at the end:
