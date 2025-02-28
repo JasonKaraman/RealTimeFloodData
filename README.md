@@ -20,6 +20,10 @@ Clone the Repository
 git clone https://github.com/JasonKaraman/RealTimeFloodData.git
 cd RealTimeFloodData
 
+GIS Flood Zones
+Ensure `/home/ubuntu/data/gis_flood_zones_YYYY-MM-DD.csv` is populated before running the script.  
+If missing, download GIS flood zones from official sources or generate the required CSV format.
+
 Install Dependencies
 pip install -r requirements.txt
 
