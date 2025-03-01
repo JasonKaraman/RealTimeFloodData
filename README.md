@@ -1,6 +1,6 @@
 REAL-TIME HYPERLOCAL FLOOD DATA PIPELINE
 
-A fully automated pipeline for collecting, validating, and storing real-time hyperlocal flood data from NOAA, USGS, Twitter (X), and GIS flood zones into PostgreSQL. Useful for collecting and storing data regarding street-level flooding events. This can be useful for building out flood prediction models at the street level.
+A fully automated pipeline for collecting, validating, and storing real-time hyperlocal flood data from NOAA, USGS, Twitter (X), and GIS flood zones into PostgreSQL. Useful for collecting and storing data regarding street-level flooding events. This can be useful for building out flood prediction models at the hyperlocal level. This was developed to measure flood events in Charleston, SC but can be applied to anywhere locally.
 
 FEATURES
 
