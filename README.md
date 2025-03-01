@@ -1,4 +1,5 @@
 REAL-TIME HYPERLOCAL FLOOD DATA PIPELINE FOR CHARLESTON, SC
+
 A fully automated pipeline for collecting, validating, and storing real-time hyperlocal flood data from NOAA, USGS, Twitter (X), and GIS flood zones into PostgreSQL. Useful for collecting and storing data regarding street-level flooding events. This can be useful for building out flood prediction models at the hyperlocal level. This was developed to measure flood events in Charleston, SC. While the logic is adaptable, some sources (e.g., GIS flood zones) are specific to Charleston. 
 
 FEATURES
